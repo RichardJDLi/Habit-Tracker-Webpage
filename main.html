@@ -41,43 +41,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">Habits</h2>
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th>Habit</th>
-                                    <th>Description</th>
-                                    <th>Goal</th>
-                                    <th>Progress</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php
-                                $habits = getHabits();
-                                foreach ($habits as $habit) {
-                                    echo '<tr>';
-                                    echo '<td>' . $habit['habit'] . '</td>';
-                                    echo '<td>' . $habit['description'] . '</td>';
-                                    echo '<td>' . $habit['goal'] . '</td>';
-                                    echo '<td>' . $habit['progress'] . '</td>';
-                                    echo '<td>';
-                                    echo '<a href="edit.php?id=' . $habit['id'] . '" class="btn btn-primary">Edit</a>';
-                                    echo '<a href="delete.php?id=' . $habit['id'] . '" class="btn btn-danger">Delete</a>';
-                                    echo '</td>';
-                                    echo '</tr>';
-                                }
-                                ?>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div>
 
 </body>
